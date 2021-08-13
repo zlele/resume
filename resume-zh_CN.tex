@@ -23,19 +23,19 @@
 \section{\faGraduationCap\  教育背景}
 \datedsubsection{\textbf{中国科学院计算技术研究所}, 北京}{2011 -- 2014}
 \textit{硕士}\ 计算机体系结构
-\datedsubsection{\textbf{山东师范范大学}, 山东, 济南}{2007 -- 2011}
+\datedsubsection{\textbf{山东师范大学}, 山东, 济南}{2007 -- 2011}
 \textit{学士}\ 计算机科学与技术
 
 \section{\faWrench\  工作经历}
 \datedsubsection{\textbf{VMware}, 北京}{2014 -- 至今}
-\textit{高级软件工程师}\  NSBU网络platform团队
+\textit{高级软件工程师(Senior MTS)}\  NSBU网络platform团队
 
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
   \item 编程语言：C++，C，python。
   \item 虚拟网络管理/控制面。
-  \item 高质量商业化产品开发，测试，运维流程。
+  \item 高质量商业产品开发，测试，运维流程。
   \item Linux平台软件开发。
   \item 计算机网络基础知识。
   \item Linux网络。
@@ -51,31 +51,31 @@
 \begin{itemize}
   \item 生命周期管理器是VMware下一代的server配置管理技术。利用规范化的schema和数据库存储server的所有配置，从而实现利用配置文档方便的管理整个集群甚至整个数据中心。
   \item 分析ESXi的所有网络配置持久化和恢复的行为，设计网络配置的schema。
-  \item 带领团队重构底层库，实现vswitch，netstack，vmknic，pnic，firewall配置往数据库迁移。
-  \begin{itemize}
-    \item 实现测试
-  \end{itemize}
+  \item 带领团队重构底层库，实现vswitch，netstack，vmknic，pnic，firewall配置往数据库迁移。网络配置的持久化和恢复与以前相比变得规范化和统一。
+  \item 带领团队实现基于schema的网络配置合法性检查模块，配置应用模块。从而网络配置可以灵活快速的推送到整个集群并生效。
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\datedsubsection{\textbf{VMware} 北京}{2019年10月 -- 2020年3月}
+\role{C++, python}{主要开发者}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+NSX-T NVDS到CVDS升级
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item 随着NSXT和vsphere的升级，客户需要把NSXT虚拟网络的data path由NVDS切换到CVDS。本项目为客户提供day0和day2的解决方案。
+  \item 与NSXT团队共同设计整体的data path切换流程, 保证不同产品间在升级过程中相互协作。保证不同产品不同版本的兼容性。
+  \item 在day0切换过程中编写反映升级阶段的vsphere API，用来与NSXT升级协作。
+  \item 在day2切换过程中，编写NSXT上的命令行工具，包括precheck, 新的网络拓扑生成和迁移的命令。
+  \item 功能已在vsphere7.0u1和NSXT Grindcore发布。
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
+\datedsubsection{\textbf{VMware} 北京}{2019年8月 -- 2019年9月}
+\role{C++}{设计，开发}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+VMware vsphere分布式交换机与NSXT集成后的autodeploy
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item autodeploy是指全新的机器随着上电可以自动安装和获取配置。
+  \item 与NSXT团队讨论并设计方案， 编写设计文档。
+  \item 负责vsphere端hostprofile代码的开发。
 \end{itemize}
 \end{onehalfspacing}
 
