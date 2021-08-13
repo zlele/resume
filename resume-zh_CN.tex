@@ -38,25 +38,24 @@
   \item 高质量商业产品开发，测试，运维流程。
   \item Linux平台软件开发。
   \item 计算机网络基础知识。
-  \item Linux网络。
   \item linux内核。
-  \item X86虚拟化技术。
   \item 英语CET6，可熟练阅读英文文献。
 \end{itemize}
 
 \section{\faUsers\ 项目经历}
 \datedsubsection{\textbf{VMware} 北京}{2020年3月 -- 至今}
-\role{C++, python}{技术leader}
+\role{C++, python}{开发，技术leader}
 网络配置与vsphere生命周期管理器集成
 \begin{itemize}
   \item 生命周期管理器是VMware下一代的server配置管理技术。利用规范化的schema和数据库存储server的所有配置，从而实现利用配置文档方便的管理整个集群甚至整个数据中心。
-  \item 分析ESXi的所有网络配置持久化和恢复的行为，设计网络配置的schema。
-  \item 带领团队重构底层库，实现vswitch，netstack，vmknic，pnic，firewall配置往数据库迁移。网络配置的持久化和恢复与以前相比变得规范化和统一。
-  \item 带领团队实现基于schema的网络配置合法性检查模块，配置应用模块。从而网络配置可以灵活快速的推送到整个集群并生效。
+  \item 根据网络配置持久化和恢复的行为，设计网络配置的schema。
+  \item 带领团队重构底层库，实现vswitch，netstack，vmknic，pnic，firewall配置往数据库迁移。
+  \item 带领团队实现基于schema的网络配置合法性检查模块，配置应用模块。
 \end{itemize}
 
+~\\
 \datedsubsection{\textbf{VMware} 北京}{2019年10月 -- 2020年3月}
-\role{C++, python}{主要开发者}
+\role{C++, python}{开发}
 \begin{onehalfspacing}
 NSX-T NVDS到CVDS升级
 \begin{itemize}
@@ -64,10 +63,10 @@ NSX-T NVDS到CVDS升级
   \item 与NSXT团队共同设计整体的data path切换流程, 保证不同产品间在升级过程中相互协作。保证不同产品不同版本的兼容性。
   \item 在day0切换过程中编写反映升级阶段的vsphere API，用来与NSXT升级协作。
   \item 在day2切换过程中，编写NSXT上的命令行工具，包括precheck, 新的网络拓扑生成和迁移的命令。
-  \item 功能已在vsphere7.0u1和NSXT Grindcore发布。
 \end{itemize}
 \end{onehalfspacing}
 
+~\\
 \datedsubsection{\textbf{VMware} 北京}{2019年8月 -- 2019年9月}
 \role{C++}{设计，开发}
 \begin{onehalfspacing}
@@ -79,6 +78,73 @@ VMware vsphere分布式交换机与NSXT集成后的autodeploy
 \end{itemize}
 \end{onehalfspacing}
 
+~\\
+\datedsubsection{\textbf{VMware} 北京}{2018年12月 -- 2019年8月}
+\role{C++}{设计，开发，技术leader}
+\begin{onehalfspacing}
+VMware vsphere分布式交换机与NSXT集成
+\begin{itemize}
+  \item 本项目目的是让vsphere分布式交换机用户平稳过渡到NSXT。
+  \item 设计ESX server端管理层的总体方案。
+  \item 带领团队实现ESX端管里面的功能。包括datapath的hotswap，VM网卡配置在API层面形式的转换，各种事件的生成发布和处理。
+\end{itemize}
+\end{onehalfspacing}
+
+~\\
+\datedsubsection{\textbf{VMware} 北京}{2014年7月 -- 至今}
+\role{C++}{运维}
+\begin{onehalfspacing}
+VMware分布式虚拟交换机管理层运维开发
+\begin{itemize}
+  \item 作为VMware分布式虚拟交换机管理层的owner，持续解决客户在使用产品中遇到的问题和内部测试发现的问题。
+  \item 解决Problem Report共计700个以上。其中包括一些复杂的竞争条件问题，ESX host和vCenter server的数据不一致问题，跨产品的设计缺陷。
+\end{itemize}
+\end{onehalfspacing}
+
+~\\
+\datedsubsection{\textbf{VMware} 北京}{2017年6月 -- 2017年8月}
+\role{python}{开发}
+\begin{onehalfspacing}
+HostProfile支持IPv6静态路由
+\begin{itemize}
+  \item HostProfile是ESX配置管理工具。本项目实现IPv6静态路由的支持。
+\end{itemize}
+\end{onehalfspacing}
+
+~\\
+\datedsubsection{\textbf{中科院计算所} 北京}{2013年9月 -- 2014年4月}
+\role{C语言}{毕业论文}
+\begin{onehalfspacing}
+基于Queue Pair的网卡驱动程序和通信库的设计
+\begin{itemize}
+  \item 实验室开发了基于Queue Pair片上网络硬件，本人的工作是为其编写驱动程序和通信库。
+  \item 通信库利用了远程内存load/store的硬件特性，降低了小数据包通信延迟。
+\end{itemize}
+\end{onehalfspacing}
+
+~\\
+\datedsubsection{\textbf{中科院计算所} 北京}{2012年10月 -- 2013年3月}
+\role{C++}{科研任务}
+\begin{onehalfspacing}
+ARMv8模拟器开发
+\begin{itemize}
+  \item 为了评估ARMv8处理器性能，开发ARMv8模拟器。
+  \item 利用gem5开发，本人主要根据指令手册模拟分支指令的行为。SPEC CPU可以稳定运行在模拟器上。
+\end{itemize}
+\end{onehalfspacing}
+
+~\\
+\datedsubsection{\textbf{中科院计算所} 北京}{2012年6月 -- 2012年9月}
+\role{C语言}{科研任务}
+\begin{onehalfspacing}
+虚拟化环境下内存共享技术的研究
+\begin{itemize}
+  \item 研究虚拟化环境下，内存可以被共享的比例，寻找硬件加速的机会。
+  \item 在xen虚拟机管理的内核中添加代码映射所有内存，利用超快速哈希算法找到内容相同的内存页。
+  \item 研究KVM虚拟机的KSM机制运行过程中的扫描速度和访存带宽。
+\end{itemize}
+\end{onehalfspacing}
+
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
 %An xxx optimized for xxx\cite{verma2015large}
@@ -86,18 +152,24 @@ VMware vsphere分布式交换机与NSXT集成后的autodeploy
 %  \item main contribution
 %\end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+\section{\faHeartO\ 成果与奖励}
+\begin{onehalfspacing}
+论文:
+\begin{itemize}
+  \item Tao Jiang, Lele Zhang, Rui Hou, Yi Zhang, Qianlong Zhang, Lin Chai, Jing Han, Wuxiang Zhang, Cong Wang, Lixin Zhang, "The ARMv8 Simulator", Proceedings of the 2013 ACM International Conference on Supercomputing (ICS), 2013, pp477-477.
 \end{itemize}
+\end{onehalfspacing}
 
+\begin{onehalfspacing}
+专利:
+\begin{itemize}
+ \item\datedline{一种虚拟化环境下TLB的使用方法}{侯锐，江涛，张乐乐，张义，张立新}
+ \item\datedline{TECHNIQUES FOR LOGGING INFORMATION}{Lele Zhang, Dousheng Zhao, Keyong Sun, Yonggang Wang}
+\end{itemize}
+\end{onehalfspacing}
+
+\section{\faInfo\ 自我评价}
+为人积极乐观，做事细致有耐心，自我驱动，热衷于钻研。具有良好的架构能力。
 %% Reference
 %\newpage
 %\bibliographystyle{IEEETran}
